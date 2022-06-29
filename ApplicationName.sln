@@ -3,13 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32210.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BcdLib.Blazor.Component.Template", "BcdLib.Blazor.Component.Template\BcdLib.Blazor.Component.Template.csproj", "{59ED6840-02AB-4AE0-9DF7-E93B645F723A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DE5D21FF-5F28-49E2-AE1A-25F523E76AAF}"
-	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
-		.template.config\template.json = .template.config\template.json
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationName", "ApplicationName.Component\ApplicationName.csproj", "{59ED6840-02AB-4AE0-9DF7-E93B645F723A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

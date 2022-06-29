@@ -12,12 +12,18 @@
 		<Company></Company>
 		<RepositoryUrl></RepositoryUrl>
 		<Description></Description>
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<SupportedPlatform Include="browser" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<Content Remove="bin\**;obj\**;wwwroot\node_modules\**;wwwroot\dist\**;wwwroot\sourceMaps\**" />
+	</ItemGroup>
+	
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.6" />
 	</ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using Microsoft.JSInterop;
 
-namespace BcdLib.Blazor.Component.Template.JsIntrop;
+namespace ApplicationName.JsIntrop;
 
 
 /// <summary>

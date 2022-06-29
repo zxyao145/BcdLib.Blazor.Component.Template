@@ -1,12 +1,55 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "zxyao",
-  "classifications": [ "Blazor", "Component" ],
+  "classifications": [
+    "Blazor",
+    "Component",
+    "Web"
+  ],
   "identity": "BcdLib.Blazor.Component.Template",
   "name": "BcdLib Blazor Component Template",
   "shortName": "bcdlib-bct",
   "tags": {
-    "language": "c#",
-    "type": "item"
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "ApplicationName",
+  "preferNameDirectory": true,
+  "primaryOutputs": [{
+    "path": "ApplicationName.sln"
+  }],
+  "sources": [{
+    "source": "./",
+    "target": "./",
+    "copyOnly": [
+      "**/wwwroot/**"
+    ],
+    "exclude": [
+      ".template.config/**",
+      ".vs/**",
+      ".git/**",
+      ".gitattributes",
+      "LICENSE",
+      "**/[Bb]in/**",
+      "**/[Oo]bj/**",
+      "**/Properties/**",
+      "**/wwwroot/node_modules/**",
+      "**/wwwroot/dist/**",
+      "**/wwwroot/sourceMaps/**"
+    ],
+    "modifiers": [{
+      "condition": "(!README)",
+      "exclude": [
+        "README.md"
+      ]
+    }]
+  }],
+  "symbols": {
+    "README": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true",
+      "description": "Add a README.md markdown file describing the project."
+    }
   }
 }
