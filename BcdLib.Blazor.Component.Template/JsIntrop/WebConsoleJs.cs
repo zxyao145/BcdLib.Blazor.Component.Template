@@ -15,7 +15,7 @@ public class WebConsoleJs : IAsyncDisposable
     public WebConsoleJs(IJSRuntime jsRuntime)
     {
         moduleTask = new(() => jsRuntime.InvokeAsync<IJSObjectReference>(
-           "import", "./_content/BcdLib.Blazor.Component.Template/dist/index.min.js").AsTask());
+           "import", "./_content/BcdLib.Blazor.Component.Template/dist/WebConsole.min.js").AsTask());
     }
 
     public async ValueTask LogAsync(params string[] message)

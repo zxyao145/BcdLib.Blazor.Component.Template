@@ -3,10 +3,10 @@
   "author": "zxyao",
   "classifications": [ "Blazor", "Component" ],
   "identity": "BcdLib.Blazor.Component.Template",
-  "name": "BcdLib Blazor Component Template: using gulp and scss",
+  "name": "BcdLib Blazor Component Template",
   "shortName": "bcdlib-bct",
   "tags": {
-    "language": "C#",
-    "type": "project"
+    "language": "c#",
+    "type": "item"
   }
 }
