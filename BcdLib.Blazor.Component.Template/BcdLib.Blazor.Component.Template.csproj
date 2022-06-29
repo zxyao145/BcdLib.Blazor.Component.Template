@@ -33,9 +33,9 @@
 		</DefaultItemExcludes>
 	</PropertyGroup>
 
-	<Target Name="RunGulpDev" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' ">
+	<!--<Target Name="RunGulpDev" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' ">
 		<Exec WorkingDirectory="wwwroot" Command="npm run dev" />
-	</Target>
+	</Target>-->
 	
 	<Target Name="RunGulpRelease" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Release' ">
 		<Exec WorkingDirectory="wwwroot" Command="npm run build" />
