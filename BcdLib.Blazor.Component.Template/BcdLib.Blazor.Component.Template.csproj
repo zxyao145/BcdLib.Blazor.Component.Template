@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Version>6.0.6.1</Version>
+		<PackageId>BcdLib.Blazor.Component.Template</PackageId>
+		<Authors></Authors>
+		<PackageTags>blazor</PackageTags>
+		<Company></Company>
+		<RepositoryUrl></RepositoryUrl>
+		<Description></Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.6" />
+	</ItemGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+		<DefaultItemExcludes>
+			$(DefaultItemExcludes);
+			wwwroot\src\**;
+			wwwroot\gulpfile.js;
+			wwwroot\package.json;
+			wwwroot\package-lock.json;
+			wwwroot\tsconfig.json;
+			wwwroot\sourceMaps\**;
+		</DefaultItemExcludes>
+	</PropertyGroup>
+
+	<Target Name="RunGulpDev" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' ">
+		<Exec WorkingDirectory="wwwroot" Command="npm run dev" />
+	</Target>
+	
+	<Target Name="RunGulpRelease" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Release' ">
+		<Exec WorkingDirectory="wwwroot" Command="npm run build" />
+	</Target>
+</Project>

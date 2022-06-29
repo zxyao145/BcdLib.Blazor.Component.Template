@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "zxyao",
+  "classifications": [ "Blazor", "Component" ],
+  "identity": "BcdLib.Blazor.Component.Template",
+  "name": "BcdLib Blazor Component Template: using gulp and scss",
+  "shortName": "bcdlib-bct",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
