@@ -14,7 +14,7 @@
     "type": "project"
   },
   "sourceName": "ApplicationName",
-  "preferNameDirectory": true,
+  "preferNameDirectory": false,
   "primaryOutputs": [{
     "path": "ApplicationName.sln"
   }],
