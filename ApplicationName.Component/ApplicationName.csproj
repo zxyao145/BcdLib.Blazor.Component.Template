@@ -2,18 +2,23 @@
 
 	<PropertyGroup>
 		<PackageType>Template</PackageType>
+		<PackageVersion>6.0.6.1</PackageVersion>
+		<PackageId>BcdLib.Blazor.Component.Template</PackageId>
+		<Title>>BcdLib Blazor Component Template</Title>
+		<Authors>zxyao</Authors>
+		<Description>Templates to use when creating an application</Description>
+		<PackageTags>Blazor;Template;BcdLib</PackageTags>
 		<TargetFramework>net6.0</TargetFramework>
+
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<ContentTargetFolders>content</ContentTargetFolders>
+		
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<Version>6.0.6.1</Version>
-		<PackageId>BcdLib.Blazor.Component.Template</PackageId>
-		<Authors></Authors>
-		<PackageTags>blazor</PackageTags>
 		<Company></Company>
 		<RepositoryUrl></RepositoryUrl>
 		<Description></Description>
-		<IncludeContentInPack>true</IncludeContentInPack>
-		<IncludeBuildOutput>false</IncludeBuildOutput>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -22,6 +27,10 @@
 
 	<ItemGroup>
 		<Content Remove="bin\**;obj\**;wwwroot\node_modules\**;wwwroot\dist\**;wwwroot\sourceMaps\**" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(Configuration)' == 'Release' ">
+		<Compile Remove="**\*" />
 	</ItemGroup>
 	
 	<ItemGroup>
@@ -48,3 +57,4 @@
 		<Exec WorkingDirectory="wwwroot" Command="npm run build" />
 	</Target>
 </Project>
+
