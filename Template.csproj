@@ -2,10 +2,10 @@
 	<PropertyGroup>
 		<PackageType>Template</PackageType>
 		<PackageVersion>6.0.6.1</PackageVersion>
-		<PackageId>BcdLib.Blazor.Component.Template</PackageId>
-		<Title>BcdLib Blazor Component Template</Title>
+		<PackageId>BcdLib.Blazor.Templates</PackageId>
+		<Title>BcdLib Blazor Templates</Title>
 		<Authors>zxyao</Authors>
-		<Description>Templates to use when creating an BcdLib Blazor Component library</Description>
+		<Description>Templates to use when creating an Blazor project</Description>
 		<PackageTags>Blazor;Template;BcdLib</PackageTags>
 		<TargetFramework>net6.0</TargetFramework>
 
@@ -15,12 +15,16 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Content Include="src\**\*" Exclude="src\bin\**;src\obj\**;src\wwwroot\node_modules\**;src\wwwroot\dist\**;src\wwwroot\sourceMaps\**" />
+		<Content Include="templates\**\*" Exclude="templates\**\node_modules\**" />
 		<Compile Remove="**\*" />
+		<Compile Remove="templates\**\wwwroot\node_modules\**" />
+		<Content Remove="templates\**\wwwroot\node_modules\**" />
+		<EmbeddedResource Remove="templates\GulpComponent\wwwroot\node_modules\**" />
+		<None Remove="templates\**\wwwroot\node_modules\**" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Content Remove="src\README.md" />
+	  <None Remove="templates\WebpackComponent\wwwroot\src\index.ts" />
 	</ItemGroup>
 </Project>
 

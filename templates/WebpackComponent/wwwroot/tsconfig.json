@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/ts",
+    "noEmit": false, //不输出ts编译结果
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "moduleResolution": "Node",
+    "module": "es6",
+    "target": "es6",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "DOM",
+      "ES2015",
+      "ES2016",
+      "ES2017",
+      "ES2018",
+      "ES2019",
+      "ES2020"
+    ]
+  },
+
+  "exclude": [
+    "./node_modules/**/*",
+    "webpack.config.js",
+    "./dist/**/*"
+  ]
+}

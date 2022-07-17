@@ -1,0 +1,12 @@
+﻿
+
+.component-container {
+    margin: 0;
+    padding: 0;
+
+    > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

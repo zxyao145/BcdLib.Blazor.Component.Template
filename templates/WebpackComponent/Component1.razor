@@ -1,0 +1,21 @@
+﻿@using ApplicationName.JsIntrop
+@inject WebConsoleJs webConsoleJs
+
+
+
+<div class="component-container">
+    <div>
+        BcdLib.Blazor.Component.Template
+    </div>
+
+    This component is defined in the <strong>BcdLib.Blazor.Component.Template</strong> library.
+</div>
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await webConsoleJs.LogAsync("Component1: log");
+        await base.OnInitializedAsync();
+    }
+}

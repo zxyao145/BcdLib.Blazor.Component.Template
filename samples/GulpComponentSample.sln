@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32611.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GulpComponentSample", "GulpComponentSample\GulpComponentSample.csproj", "{8E65535F-BB19-423F-8920-2B0A3E1A2922}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationName", "..\templates\GulpComponent\ApplicationName.csproj", "{C592D5E1-71C5-47C2-ABF1-0509A6C435B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E65535F-BB19-423F-8920-2B0A3E1A2922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E65535F-BB19-423F-8920-2B0A3E1A2922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E65535F-BB19-423F-8920-2B0A3E1A2922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E65535F-BB19-423F-8920-2B0A3E1A2922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C592D5E1-71C5-47C2-ABF1-0509A6C435B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C592D5E1-71C5-47C2-ABF1-0509A6C435B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C592D5E1-71C5-47C2-ABF1-0509A6C435B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C592D5E1-71C5-47C2-ABF1-0509A6C435B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF46550D-D92B-418A-A79C-AABBBF8121EE}
+	EndGlobalSection
+EndGlobal
