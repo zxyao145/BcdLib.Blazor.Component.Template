@@ -1,6 +1,6 @@
 ﻿using Microsoft.JSInterop;
 
-namespace ApplicationName.JsIntrop;
+namespace ApplicationName.JsInterop;
 
 
 /// <summary>

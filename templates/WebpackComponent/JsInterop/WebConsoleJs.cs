@@ -1,6 +1,6 @@
 ﻿using Microsoft.JSInterop;
 
-namespace ApplicationName.JsIntrop;
+namespace ApplicationName.JsInterop;
 
 
 /// <summary>
@@ -12,6 +12,7 @@ public class WebConsoleJs : IAsyncDisposable
 
     private readonly IJSRuntime _jSRuntime;
     // 对于通过WebPack的方式进行打包，建议直接在HTML中引用js文件
+    // For packaging through webpack, it is recommended to directly reference JS files in HTML
     //private readonly Lazy<Task<IJSObjectReference>> moduleTask;
 
     public WebConsoleJs(IJSRuntime jsRuntime)

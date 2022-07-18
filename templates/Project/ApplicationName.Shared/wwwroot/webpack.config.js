@@ -30,6 +30,7 @@ const configFunc = (env, options) => {
         watch: false,
         entry: entryJs,
         output: {
+            path: path.resolve(__dirname, 'dist'),
             filename: `${outputJsDir}[name].min.js`,
             path: path.resolve(__dirname, "dist")
         },
@@ -58,16 +59,18 @@ const configFunc = (env, options) => {
                     exclude: /node_modules/
                 },
                 {
+                    test: /\.(woff(2)?|ttf|eot|otf)?(\?v=[0-9]\.[0-9]\.[0-9])*$/,
+                    type: 'asset/resource',
+                    generator: {
+                        filename: `./${outputFontsDir}/[name][ext]`
+                    },
+                },
+                {
                     test: /\.(png|svg|jpg|gif|jpeg)(\?v=[0-9]\.[0-9]\.[0-9])*$/,
                     type: 'asset/resource',
                     generator: {
                         filename: `./${outputImgDir}/[name][ext]`
                     },
-                },
-                {
-                    enforce: "pre",
-                    test: /\.js$/,
-                    loader: "source-map-loader"
                 },
                 {
                     enforce: "pre",
@@ -80,29 +83,16 @@ const configFunc = (env, options) => {
             "jquery": 'jQuery'
         },
         optimization: {
-            //splitChunks: {
-            //    //chunks: 'all',//将其他node_modules下打包为一个文件
-            //    cacheGroups: {
-            //        //vendors: {
-            //        //    test: /[\\/]node_modules[\\/][.]*jquery/,
-            //        //    priority: -10,
-            //        //    name: 'vendor'
-            //        //},
-            //        commonModule: {
-            //            test: /[\\/]node_modules[\\/]/,
-            //            name: 'js/commonModule',
-            //            chunks: 'all',
-            //            priority: -10,
-            //            minChunks: 2
-            //        },
-            //        commons: {
-            //            test: /src\/ts/,
-            //            name: 'js/commons',
-            //            chunks: 'initial',
-            //            minChunks: 8
-            //        }
-            //    }
-            //},
+            splitChunks: {
+                //chunks: 'all',//将其他node_modules下打包为一个文件
+                cacheGroups: {
+                    vendors: {
+                        test: /[\\/]node_modules[\\/][.]*/,
+                        priority: -10,
+                        name: 'vendor'
+                    }
+                }
+            },
             //runtimeChunk: {
             //    name: 'runtime'
             //}

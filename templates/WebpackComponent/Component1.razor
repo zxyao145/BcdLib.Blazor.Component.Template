@@ -1,4 +1,4 @@
-﻿@using ApplicationName.JsIntrop
+﻿@using ApplicationName.JsInterop
 @inject WebConsoleJs webConsoleJs
 
 
@@ -13,7 +13,7 @@
 
 
 @code {
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         await webConsoleJs.LogAsync("Component1: log");
         await base.OnInitializedAsync();

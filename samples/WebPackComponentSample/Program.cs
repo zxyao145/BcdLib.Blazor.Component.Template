@@ -1,4 +1,4 @@
-using ApplicationName.JsIntrop;
+using ApplicationName.JsInterop;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using WebPackComponentSample;
