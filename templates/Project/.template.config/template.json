@@ -6,8 +6,8 @@
     "Component",
     "Webpack"
   ],
-  "identity": "BcdLib.Blazor.Component.Template",
-  "name": "BcdLib Blazor Component Template",
+  "identity": "BcdLib.Blazor.Template.Project",
+  "name": "BcdLib Blazor Project Template",
   "shortName": "bcdlib-bct-proj",
   "tags": {
     "language": "C#",
@@ -15,31 +15,37 @@
   },
   "sourceName": "ApplicationName",
   "preferNameDirectory": false,
-  "primaryOutputs": [{
-    "path": "ApplicationName.sln"
-  }],
-  "sources": [{
-    "source": "./",
-    "target": "./",
-    "copyOnly": [
-      "**/wwwroot/**"
-    ],
-    "exclude": [
-      ".template.config/**",
-      ".gitattributes",
-      "**/[Bb]in/**",
-      "**/[Oo]bj/**",
-      "**/wwwroot/node_modules/**",
-      "**/wwwroot/dist/**",
-      "**/wwwroot/sourceMaps/**"
-    ],
-    "modifiers": [{
-      "condition": "(!README)",
+  "primaryOutputs": [
+    {
+      "path": "ApplicationName.sln"
+    }
+  ],
+  "sources": [
+    {
+      "source": "./",
+      "target": "./",
+      "copyOnly": [
+        "**/wwwroot/**"
+      ],
       "exclude": [
-        "README.md"
+        ".template.config/**",
+        ".gitattributes",
+        "**/[Bb]in/**",
+        "**/[Oo]bj/**",
+        "**/wwwroot/node_modules/**",
+        "**/wwwroot/dist/**",
+        "**/wwwroot/sourceMaps/**"
+      ],
+      "modifiers": [
+        {
+          "condition": "(!README)",
+          "exclude": [
+            "README.md"
+          ]
+        }
       ]
-    }]
-  }],
+    }
+  ],
   "symbols": {
     "README": {
       "type": "parameter",

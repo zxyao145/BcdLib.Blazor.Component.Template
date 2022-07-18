@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<PackageType>Template</PackageType>
-		<PackageVersion>6.0.6.1</PackageVersion>
+		<PackageVersion>6.0.0.1</PackageVersion>
 		<PackageId>BcdLib.Blazor.Templates</PackageId>
 		<Title>BcdLib Blazor Templates</Title>
 		<Authors>zxyao</Authors>
@@ -15,18 +15,21 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Content Include="templates\**\*" Exclude="templates\**\node_modules\**" />
-		<Compile Remove="**\*" />
+		<Content Include="templates\**\*"
+				 Exclude="templates\**\node_modules\**;templates\**\bin\**;templates\**\obj\**;templates\**\.vs\**" 
+				 />
 		<Compile Remove="templates\**\wwwroot\node_modules\**" />
 		<Content Remove="templates\**\wwwroot\node_modules\**" />
 		<EmbeddedResource Remove="templates\GulpComponent\wwwroot\node_modules\**" />
 		<None Remove="templates\**\wwwroot\node_modules\**" />
+
+		<Compile Remove="**\*" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="templates\Project\ApplicationName.Shared\Components\Component1.razor" />
-	  <None Remove="templates\Project\README.md" />
-	  <None Remove="templates\WebpackComponent\wwwroot\src\index.ts" />
+		<None Remove="templates\Project\ApplicationName.Shared\Components\Component1.razor" />
+		<None Remove="templates\Project\README.md" />
+		<None Remove="templates\WebpackComponent\wwwroot\src\index.ts" />
 	</ItemGroup>
 </Project>
 

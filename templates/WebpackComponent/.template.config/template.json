@@ -6,8 +6,8 @@
     "Component",
     "Webpack"
   ],
-  "identity": "BcdLib.Blazor.Component.Template",
-  "name": "BcdLib Blazor Component Template",
+  "identity": "BcdLib.Blazor.Template.Component.Webpack",
+  "name": "BcdLib Blazor Component Template with Webpack",
   "shortName": "bcdlib-bct-webpack",
   "tags": {
     "language": "C#",
