@@ -24,6 +24,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="templates\Project\ApplicationName.Shared\Components\Component1.razor" />
+	  <None Remove="templates\Project\README.md" />
 	  <None Remove="templates\WebpackComponent\wwwroot\src\index.ts" />
 	</ItemGroup>
 </Project>
