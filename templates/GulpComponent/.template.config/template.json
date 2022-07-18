@@ -8,7 +8,7 @@
   ],
   "identity": "BcdLib.Blazor.Component.Template",
   "name": "BcdLib Blazor Component Template",
-  "shortName": "bcdlib-bct",
+  "shortName": "bcdlib-bct-gulp",
   "tags": {
     "language": "C#",
     "type": "project"

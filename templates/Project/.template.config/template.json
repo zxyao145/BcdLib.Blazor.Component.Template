@@ -4,11 +4,11 @@
   "classifications": [
     "Blazor",
     "Component",
-    "Gulp"
+    "Webpack"
   ],
   "identity": "BcdLib.Blazor.Component.Template",
   "name": "BcdLib Blazor Component Template",
-  "shortName": "bcdlib-bct",
+  "shortName": "bcdlib-bct-proj",
   "tags": {
     "language": "C#",
     "type": "project"
